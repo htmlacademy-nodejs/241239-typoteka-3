@@ -1,7 +1,7 @@
 # Личный проект «Типотека» [![Build status][travis-image]][travis-url]
 
 * Студент: [Виктор Кан](https://up.htmlacademy.ru/nodejs/3/user/241239).
-* Наставник: `Неизвестно`.
+* Наставник: `Игорь Антонов`.
 
 ---
 

@@ -2,6 +2,7 @@
 
 const fs = require(`fs`);
 const {getRandomInt, shuffle} = require(`../../utils`);
+const chalk = require(`chalk`);
 
 const DEFAULT_COUNT = 1;
 const FILE_NAME = `mock.json`;
@@ -87,10 +88,10 @@ module.exports = {
 
     fs.writeFile(FILE_NAME, content, (err) => {
       if (err) {
-        return console.error(`Can't write data to file...`)
+        return console.error(chalk.red(`Can't write data to file...`));
       }
 
-      return console.log(`Operation success. File created. Congratulation!`);
+      return console.log(chalk.green(`Operation success. File created. Congratulation!`));
     })
   }
 };

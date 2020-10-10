@@ -10,7 +10,8 @@
     "generate": "node ./src/service/service.js --generate",
     "server": "node ./src/service/service.js --server",
     "server.dev": "nodemon ./src/service/service.js --server 3000",
-    "start-front-server": "node ./src/express"
+    "start-front-server": "node ./src/express",
+    "start-front-server.dev": "nodemon ./src/express"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,12 @@
   "homepage": "https://github.com/htmlviktor/241239-typoteka-3#readme",
   "devDependencies": {
     "eslint": "7.7.0",
-    "eslint-config-htmlacademy": "0.5.2"
+    "eslint-config-htmlacademy": "0.5.2",
+    "nodemon": "2.0.4"
   },
   "dependencies": {
     "chalk": "4.1.0",
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "pug": "3.0.0"
   }
 }

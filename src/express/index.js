@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 const express = require(`express`);
 const mainRoutes = require(`./routes/main`);
 const myRoutes = require(`./routes/my`);
@@ -7,6 +9,12 @@ const categoriesRoutes = require(`./routes/categories`);
 
 const DEFAULT_PORT = 8000;
 const app = express();
+const PUBLIC_DIR = `public`;
+
+app.set(`view engine`, `pug`);
+app.set(`views`, path.resolve(__dirname, `templates`));
+
+app.use(express.static(path.resolve(__dirname, PUBLIC_DIR)));
 
 
 app.use(`/`, mainRoutes);
